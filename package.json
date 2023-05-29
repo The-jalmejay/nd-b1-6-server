@@ -1,0 +1,22 @@
+{
+  "name": "nd-b1-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "moviesServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node moviesServer.js"
+  },
+  "keywords": [
+    "node",
+    "build"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
