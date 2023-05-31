@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
   );
   next();
 });
-var port = process.env.port || 2410;
+var port = process.env.PORT || 2410;
 app.listen(port, () => console.log(`Node app listening on port jai~ ${port}!`));
 let fs = require("fs");
 let fname = "moviesData.json";

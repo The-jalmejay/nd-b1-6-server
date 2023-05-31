@@ -680,6 +680,7 @@ const halls = [
     details: [
       {
         hallName: "Cinepolis: DLF Place, Saket",
+        seats:{reclinerset:20,gold25:25,gold22:22,gold:20},
         timings: [
           { time: "9:00 AM", price: 250 },
           { time: "12:00 PM", price: 350 },
@@ -690,6 +691,7 @@ const halls = [
       },
       {
         hallName: "Cinepolis: Cross River Mall, Shahdara",
+        seats:{reclinerset:20,gold25:25,gold22:18,gold:15},
         timings: [
           { time: "10:00 AM", price: 250 },
           { time: "2:00 PM", price: 350 },
@@ -700,6 +702,7 @@ const halls = [
       },
       {
         hallName: "Carnival: TGIP",
+        seats:{reclinerset:10,gold25:20,gold22:16,gold:16},
         timings: [
           { time: "1:15 PM", price: 250 },
           { time: "2:45 PM", price: 280 },
@@ -715,6 +718,7 @@ const halls = [
     details: [
       {
         hallName: "Orange Cinemas: Bapunagar",
+        seats:{reclinerset:8,gold25:22,gold22:20,gold:20},
         timings: [
           { time: "10:00 AM", price: 500 },
           { time: "10:00 PM", price: 500 },
@@ -722,6 +726,7 @@ const halls = [
       },
       {
         hallName: "Banana Smartplex: SBR, Thaltej",
+        seats:{reclinerset:20,gold25:25,gold:20},
         timings: [
           { time: "8:30 AM", price: 300 },
           { time: "10:50 AM", price: 300 },
@@ -733,6 +738,7 @@ const halls = [
       },
       {
         hallName: "AB Miniplex: Shivranjini Cross Road, Satellite",
+        seats:{reclinerset:20,gold25:25,gold22:22,gold:20},
         timings: [
           { time: "9:00 AM", price: 250 },
           { time: "10:15 AM", price: 500 },
@@ -748,6 +754,7 @@ const halls = [
       },
       {
         hallName: "Sanelite Cinemas: Gandhinagar",
+        seats:{reclinerset:15,gold25:20,gold22:22,gold:20},
         timings: [
           { time: "1:15 PM", price: 200 },
           { time: "2:45 PM", price: 200 },
@@ -763,6 +770,7 @@ const halls = [
     details: [
       {
         hallName: "Kino Cinemas: Seegehalli Kadugodi, Bengaluru",
+        seats:{reclinerset:8,gold25:22,gold22:20,gold:15},
         timings: [
           { time: "11:00 AM", price: 500 },
           { time: "4:20 PM", price: 350 },
@@ -772,7 +780,8 @@ const halls = [
       },
       {
         hallName: "Navrang Theatre: Rajaji Nagar",
-        timing: [
+        seats:{reclinerset:20,gold25:22,gold22:20,gold:15},
+        timings: [
           { time: "11:00 AM", price: 500 },
           { time: "7:15 PM", price: 250 },
           { time: "8:50 PM", price: 200 },
@@ -780,6 +789,7 @@ const halls = [
       },
       {
         hallName: "Narthaki 4K Dolby 7.1 Digital S R: Gandhi Nagar",
+        seats:{reclinerset:20,gold25:25,gold22:22,gold:20},
         timings: [
           { time: "10:30 AM", price: 300 },
           { time: "1:30 PM", price: 300 },
@@ -791,6 +801,7 @@ const halls = [
       },
       {
         hallName: "Cinephile HSR Layout: PNR Felicity Mall Haralur Rd",
+        seats:{reclinerset:10,gold25:22,gold22:22,gold:20},
         timings: [
           { time: "1:15 PM", price: 200 },
           { time: "2:45 PM", price: 200 },
@@ -806,6 +817,7 @@ const halls = [
     details: [
       {
         hallName: "MAYAJAAL Multiplex: ECR, Chennai",
+        seats:{reclinerset:10,gold25:23,gold22:22,gold:20},
         timings: [
           { time: "11:00 AM", price: 300 },
           { time: "4:20 PM", price: 200 },
@@ -815,6 +827,7 @@ const halls = [
       },
       {
         hallName: "AGS Cinemas: Maduravoyal",
+        seats:{reclinerset:10,gold25:23,gold22:22,gold:20},
         timings: [
           { time: "10:30 AM", price: 300 },
           { time: "1:30 PM", price: 300 },
@@ -831,6 +844,7 @@ const halls = [
     details: [
       {
         hallName: "Vaishali Cinema: Badlapur",
+        seats:{reclinerset:20,gold25:25,gold22:22,gold:20},
         timings: [
           { time: "11:00 AM", price: 500 },
           { time: "4:20 PM", price: 350 },
@@ -840,7 +854,8 @@ const halls = [
       },
       {
         hallName: "Movie Max V Cinema: Virar (E)",
-        timing: [
+        seats:{reclinerset:10,gold25:23,gold22:22,gold:20},
+        timings: [
           { time: "11:00 AM", price: 500 },
           { time: "7:15 PM", price: 250 },
           { time: "8:50 PM", price: 200 },
@@ -853,6 +868,7 @@ const halls = [
     details: [
       {
         hallName: "Platinum Movietime Cinemas: Ameerpet",
+        seats:{reclinerset:20,gold25:25,gold22:22,gold:20},
         timings: [
           { time: "10:30 AM", price: 300 },
           { time: "1:30 PM", price: 300 },
@@ -864,6 +880,7 @@ const halls = [
       },
       {
         hallName: "Ganesh 70MM: Shamshabad",
+        seats:{reclinerset:20,gold25:25,gold22:22,gold:20},
         timings: [
           { time: "9:00 AM", price: 500 },
           { time: "11:00 AM", price: 500 },
