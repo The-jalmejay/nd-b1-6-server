@@ -80,7 +80,6 @@ app.get("/svr/resetLoginData", async function (req, res) {
 app.get("/movies/:location", async function (req, res) {
   const location = req.params.location;
   const { lang, genre, format, q } = req.query;
-  console.log(location, lang, format);
   try {
     let data = await fs.promises.readFile(fname, "utf-8");
     let data2 = await fs.promises.readFile(fhname, "utf-8");
@@ -208,11 +207,39 @@ app.get(
     console.log(email);
     try {
       let data = await fs.promises.readFile(ftname, "utf-8");
+      let data2 = await fs.promises.readFile(flogin, "utf-8");
       let obj = JSON.parse(data);
+      let obj2 = JSON.parse(data2);
       // console.log(obj);
       let fil = obj.filter((e) => e.email === email);
+      let fin = obj2.find((e) => e.email === email);
       console.log("Fil", fil);
-      res.send(fil);
+      res.json({arr:fil,details:fin});
+    } catch (err) {
+      res.send(err);
+    }
+  }
+);
+app.post(
+  "/profile/save",
+  passport.authenticate("jwt", { session: false }),
+  async function (req, res) {
+    let body = req.body;
+    const {firstName="",lastName="",married="",email=""}=body;
+    try {
+      let data = await fs.promises.readFile(flogin, "utf-8");
+      let obj = JSON.parse(data);
+      let fin = obj.find((e) => e.email === email);
+      fin.firstName=firstName;
+      fin.lastName=lastName;
+      fin.married=married;
+      let data1 = JSON.stringify(obj);
+      try {
+        await fs.promises.writeFile(flogin, data1);
+        res.send(body);
+      } catch (err) {
+        res.send(err);
+      }
     } catch (err) {
       res.send(err);
     }

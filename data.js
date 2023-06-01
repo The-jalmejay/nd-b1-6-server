@@ -925,9 +925,9 @@ let tickets = [
   },
 ];
 const loginData = [
-  { email: "admin@admin.com", password: "admin", role: "admin" },
-  { email: "user@user.com", password: "user", role: "user" },
-  { email: "test@test.com", password: "test", role: "user" },
+  { email: "admin@admin.com", password: "admin", role: "admin",firstName:"Admin",lastName:"Admin",married:"No" },
+  { email: "user@user.com", password: "user", role: "user" ,firstName:"User",lastName:"User",married:"No"},
+  { email: "test@test.com", password: "test", role: "user" ,firstName:"Test",lastName:"Test",married:"No"},
 ];
 module.exports.results = results;
 module.exports.halls = halls;
